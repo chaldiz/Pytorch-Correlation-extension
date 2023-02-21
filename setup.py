@@ -3,11 +3,11 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension, CppExtensio
 from os.path import join
 
 CPU_ONLY = False
-project_root = 'Correlation_Module'
+project_root = '/kaggle/working/Pytorch-Correlation-extension/Correlation_Module'
 
 source_files = ['correlation.cpp', 'correlation_sampler.cpp']
 
-with open("README.md", "r") as fh:
+with open("/kaggle/working/Pytorch-Correlation-extension/README.md", "r") as fh:
     long_description = fh.read()
 
 
